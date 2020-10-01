@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  color: #222222;
+}
+
+a {
+  color: #222222;
+}
+
+button {
+  background-color: #222222;
+  color: #eeeeee;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 0.5rem;
+  word-break: initial;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montaga', Georgia, serif;
+}
+
+header {
+  margin-bottom: 2rem;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .content {
+  margin: auto;
+  text-align: center;
+  color: #eeeeee;
+}
+
+header h1 {
+  font-size: 6vmax;
+}
+
+header h2 {
+  font-size: 3vmax;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* events */
+
+main h2 {
+  margin-bottom: 1rem;
+}
+
+.events .content {
+  margin-bottom: 2rem;
+  
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  word-break: break-word;
+}
+
+.event {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: calc(33% - 1rem);
+  min-width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #cccccc;
+}
+
+.event:last-child {
+  margin-right: 0;
+}
+
+.event h3 {
+  margin-bottom: 1rem;
+}
+
+.event p {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.event ul {
+  list-style: none;
+  font-style: italic;
+}
+
+/* books */
+
+.books > .content {
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  word-break: break-word;
+}
+
+.book {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  width: calc(25% - 1rem);
+  min-width: 160px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #cccccc;
+}
+
+.book > .content {
+  padding: 0.5rem;
+  border: 1px solid #999999;
+  border-top: 0;
+  
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book .image {
+  height: 200px;
+}
+
+.book .image img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.book h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.book h4 {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.book .buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book .buy .price {
+  margin-right: 0.5rem;
+}
